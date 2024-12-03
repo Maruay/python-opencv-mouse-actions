@@ -42,4 +42,4 @@ This is computer vision program that detect hand landmarks using mediapipe to de
 
 7. **Double click**
 
-    Double click functionality is different from what you are physically perform the action. In this project, the fingers' movement to perform double click is to bend index and middle fingers down at the same time. Therefore, I consider all landmarks of index and middle fingers and then, as the other functionality, I calculate angle to detect that these 2 fingers are bending down together. If so, I call `doubleClick` function in `pyautogui` to perform double click action.
+    Double click functionality is different from what you are physically performing the action. In this project, the fingers' movement to perform double click is to bend index and middle fingers down at the same time. Therefore, I consider all landmarks of index and middle fingers and then, as the other functionality, I calculate angles to detect whether these 2 fingers are bending down together or not. If so, I call `doubleClick` function in `pyautogui` to perform double click action.
