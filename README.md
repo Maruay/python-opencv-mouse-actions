@@ -37,4 +37,9 @@ This is computer vision program that detect hand landmarks using mediapipe to de
     Imagine while you are using a mouse, what and which finger that you use to perform left click? The answer is to press the index finger on a mouse. In this project, I try to use the same action that we do while performing left click which is to bend index finger down. In this action, I focus on the landmarks of index finger which are landmark number 5, 6, 7 and 8. I calculate angle between vectors of landmark number 5, 6 and landmark number 6, 8 and determine that if it is less than 50 that means the index finger is bending down, then, I use `press` function in `pyninput.mouse` library to perform left click.
     
 6. **Right click**
+
+    It is similar to the real-world experience that while you are going to perform right click, you are pressing the right button on a mouse with middle finger. I detect middle finger's landmarks considering only landmarks number 9, 10, 11 and 12 by calculating angle between 2 vectors, landmark number 9 & 10 and number 10 & 12. If it is less than 50 means to perform right click. Similarly, I call `press` function in `pyninput.mouse` and pass `Button.Right` as parameter.
+
 7. **Double click**
+
+    Double click functionality is different from what you are physically perform the action. In this project, the fingers' movement to perform double click is to bend index and middle fingers down at the same time. Therefore, I consider all landmarks of index and middle fingers and then, as the other functionality, I calculate angle to detect that these 2 fingers are bending down together. If so, I call `doubleClick` function in `pyautogui` to perform double click action.
